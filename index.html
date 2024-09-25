@@ -43,6 +43,22 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <style>
+    .iframe-wrapper {
+  height: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.iframe-wrapper iframe {
+  width: 133.33%;
+  height: 133.33%;
+  border: 0;
+  transform: scale(0.75);
+  transform-origin: 0 0;
+}
+
+  </style>
 </head>
 <body>
 
@@ -73,29 +89,20 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="static/pdfs/Oliver_Bachelor_Thesis.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper</span>
+                        <span>Thesis</span>
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
+                
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/ETH-PEACH-Lab/Visual-PeerTesting" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -104,16 +111,7 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+          
             </div>
           </div>
         </div>
@@ -122,43 +120,16 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <iframe 
-        src="https://olileh.github.io/JupyterLite-Peertesting"
-        width="133%"
-        height="800px"
-        style="-ms-zoom: 0.75;
-        -moz-transform: scale(0.75);
-        -moz-transform-origin: 0 0;
-        -o-transform: scale(0.75);
-        -o-transform-origin: 0 0;
-        -webkit-transform: scale(0.75);
-        -webkit-transform-origin: 0 0;"
-        >
-      </iframe>
-      <h2 class="subtitle has-text-centered" style="margin-top: -180px;">
-        <span>You can explore the extension by clicking on the</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" data-icon="ui-components:tab" data-icon-id="0ae0fa69-1a7a-436f-bc0f-2f3e1fcdf874" style="vertical-align: middle; position: relative; top: -1px;"><g class="jp-icon3" fill="#616161"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h10v4h8v10z"></path></g></svg>
-      <span> button in the top right corner. You can also access the <a href="https://olileh.github.io/JupyterLite-Peertesting" target="_blank">demo</a> in fullscreen. This is dummy data as it would be too expensive to host a proper backend for this demo.</span>
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Live Peer testing is the process of creating and sharing tests with others in real time. Previous research has shown this to be an effective tool in programming education. As part of this thesis we developed a system that extends this paradigm from previously only text based data to Visual Data. This system involves a JupyterLab extension, a backend server and database which allows instructors and students to all join a virtual collaborative learning environment. We also setup a webpage with information about this project and instructions how to self host the system yourself. Finally we also ran a user study to get feedback on our design.
+
+Live Peer testing is the process of creating and sharing tests with others in real time. Previous research has shown this to be an effective tool in programming education. As part of this thesis, we developed a system that extends this paradigm from previously only text-based data to visual data. This system involves a JupyterLab extension, a backend server and database which allows instructors and students to all join a virtual collaborative learning environment. To provide more information about our project, we set up a dedicated webpage. This webpage not only offers comprehensive information about the project but also includes detailed instructions on how users can self-host the system. Additionally, to ensure the effectiveness and user-friendliness of our design, we conducted a user study. This study allowed us to gather valuable feedback, which will inform future improvements to the system.
           </p>
         </div>
       </div>
@@ -167,147 +138,68 @@
 </section>
 <!-- End paper abstract -->
 
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Extension demo</h2>
+        <div class="content has-text-justified">
+          <p> <span>You can explore the extension by clicking on the</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" data-icon="ui-components:tab" data-icon-id="0ae0fa69-1a7a-436f-bc0f-2f3e1fcdf874" style="vertical-align: middle; position: relative; top: -1px;"><g class="jp-icon3" fill="#616161"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h10v4h8v10z"></path></g></svg>
+          <span> button in the top right corner. You can also access the <a href="https://olileh.github.io/JupyterLite-Peertesting" target="_blank">demo</a> in fullscreen. This isn't connected to a backend or database. The data is static and not dynamic. Its only purpose is to showcase the extension.</span></p>
+        </div>
+        <div class="iframe-wrapper">
+          <iframe 
+            src="https://olileh.github.io/JupyterLite-Peertesting"
+            width="133%"
+            height="800px"
+          >
+          </iframe>
+        </div>
+        
+  
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 <!-- Image peertesting -->
 <section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Live Peer Testing</h2>
+        <h2 class="title is-3">User Study</h2>
         <div class="content has-text-justified">
           <p>
-            Live Peer testing is the process of creating and sharing tests with others in real time. Previous research has shown this to be an effective tool in programming education. As part of this thesis we developed a system that extends this paradigm from previously only text based data to Visual Data. This system involves a JupyterLab extension, a backend server and database which allows instructors and students to all join a virtual collaborative learning environment. We also setup a webpage with information about this project and instructions how to self host the system yourself. Finally we also ran a user study to get feedback on our design.
-          </p>
+            Five participants took part in our user study.  The goal was to evaluate the effectiveness, usability, and reception of the developed Jupyter Notebook extension in a real-world setting. For this we gathered participant data like familiarity with Jupyter Notebooks. Participants also filled out System Usability Scale questionnaires as well as a questionnaire asking for qualitative feedback. The average SUS score across all participants is 61 and a standard deviation of 9.7, which indicates some variation within the data. If we group the people by using Jupyter Notebooks daily or often and never we get
+            the following values. The former have an average SUS score of 67.5 with standard deviation of 5.0 while the latter have a SUS score of 56.67 with a standard deviation of 9.65.          </p>
         </div>
+        <img src="static/images/sus.png" alt="System Usability Scale" style="width:90%">
+
       </div>
     </div>
   </div>
 </section>
 <!-- End peertesting -->
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
 
 
 
 
 
 
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
+
+
+
+
+
+
 
 
   <footer class="footer">
@@ -321,6 +213,7 @@
             You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
+
 
         </div>
       </div>
